@@ -1,2 +1,2 @@
-# Phonegap-Generic-Boilerplate
-A generic boilerplate for constructing PhonegapApps
+# Phonegap-Camera-Test
+A simple test of Phonegaps's Camera API.
