@@ -1,15 +1,15 @@
 # Phonegap--Generic-Boilerplate
 A generic boilerplate for constructing PhonegapApps
 
-There are three (3) big differences to note.
+There are three (3) big differences to note between Phonegap HTML5 and previous versions of HTML.
 
-The new opening element for *html5* is:
+The new opening element for [*html5*](http://www.w3schools.com/tags/tag_doctype.asp) is:
 
 ```
 	<!DOCTYPE html>
 ```
 
-The next most important element sets the device parameters. It tells the hardware that I know this is going to a mobile device. Mozilla has a [bit to say](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag), but you'll also want to read [this essay](http://www.quirksmode.org/blog/archives/2010/04/a_pixel_is_not.html) from PPK. That element is:
+The next most important element sets the device parameters. It tells the mobile device I know what how to detect the device and I don't assume a width of 1024px. Mozilla has a [bit to say](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag), but you'll also want to read [this essay](http://www.quirksmode.org/blog/archives/2010/04/a_pixel_is_not.html) from PPK. That element is:
 
 ```
 	<meta name="viewport" content="width=device-width">
