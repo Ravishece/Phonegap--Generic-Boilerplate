@@ -24,7 +24,7 @@ The third is the listener. Many beginners trip on this part. It is important for
 	function onDeviceReady() {
 ```
 
-If however, you are not going to use the devices, you should at least have a 
+If however, you are not going to use the hardware on the mobile device, you should at least have
 
 ```
 <body onload=loaded()>
