@@ -24,8 +24,8 @@ The third is the listener. Many beginners trip on this part. It is important for
 	function onDeviceReady() {
 ```
 
-If however, you are not going to use the hardware on the mobile device, you should at least have [onload=loaded()](http://www.w3schools.com/jsref/event_onload.asp)
+If however, you are not going to use the hardware on the mobile device, you should at least have an [onload=loaded()](http://www.w3schools.com/jsref/event_onload.asp); such as,
 
 ```
-<body onload=loaded()>
+	<body onload=loaded()>
 ```
