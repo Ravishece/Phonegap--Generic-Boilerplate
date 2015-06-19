@@ -1,4 +1,4 @@
-# Phonegap--Generic-Boilerplate
+# Phonegap--Generic-Boilerplate #
 A generic boilerplate for constructing PhonegapApps
 
 There are two (2) big differences to note between HTML5 and previous versions of HTML, and one (1) important point about Phonegap.
@@ -29,3 +29,29 @@ If however, you are not going to use the hardware on the mobile device, you shou
 ```
 	<body onload=loaded()>
 ```
+
+## Android and iOS Extension ##
+2015-06-18
+
+Somehow I missed this in the first release. 
+
+**Android Extension**
+To extend the base properties of the App you need to add those properties in the AndroidManifest.xml. In this case, because it is Phonegap, extend the property in the header and add those extended properties in the body of the XML. For more details SEE: SEE: [Config File Elements](http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements)
+
+
+*Added to header*
+```
+        xmlns:android   = "http://schemas.android.com/apk/res/android"
+```
+
+*Added to body of XML*
+```
+        <gap:config-file platform="android" parent="/manifest/application" >
+            <!-- Add Android extensions here. SEE: ... -->
+        </gap:config-file>
+```
+
+**iOS Extension**
+In iOS you need to add those property extensions to the Info.plist. However, unlike the Android version, those properties only need to be added to the body. See the documentation for examples.
+
+
