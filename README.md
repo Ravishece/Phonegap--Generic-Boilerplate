@@ -1,9 +1,9 @@
 # Phonegap--Generic-Boilerplate #
 A generic boilerplate for constructing PhonegapApps
 
-There are two (2) big differences to note between HTML5 and previous versions of HTML, and one (1) important point about Phonegap.
-
 The blog post on this code is [here](http://codesnippets.altervista.org/blog/2015/BLOG.2015-06-10.jssnippets.html).
+
+There are two (2) big differences to note between HTML5 and previous versions of HTML, and one (1) important point about Phonegap.
 
 The first is the new opening element for [*html5*](http://www.w3schools.com/tags/tag_doctype.asp) is:
 
