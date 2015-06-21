@@ -1,7 +1,7 @@
 # Phonegap--Generic-Boilerplate #
 A generic boilerplate for constructing PhonegapApps
 
-The blog post on this code is [here](http://codesnippets.altervista.org/blog/2015/BLOG.2015-06-10.jssnippets.html).
+*The blog post on this code is [here](http://codesnippets.altervista.org/blog/2015/BLOG.2015-06-10.jssnippets.html).*
 
 There are two (2) big differences to note between HTML5 and previous versions of HTML, and one (1) important point about Phonegap.
 
@@ -38,10 +38,10 @@ If however, you are not going to use the hardware on the mobile device, you shou
 Somehow I missed this in the first release. 
 
 **Android Extension**
-To extend the base properties of the App you need to add those properties in the AndroidManifest.xml. In this case, because it is Phonegap, extend the property in the header and add those extended properties in the body of the XML. For more details SEE: SEE: [Config File Elements](http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements)
+To extend the base properties of the App you need to add those properties in the AndroidManifest.xml. In this case, because it is Phonegap, extend the property in the header and add those extended properties in the body of the XML. For more details, SEE: [Config File Elements](http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements)
 
 
-*Added to header*
+*Added to header of XML*
 ```
         xmlns:android   = "http://schemas.android.com/apk/res/android"
 ```
@@ -54,6 +54,6 @@ To extend the base properties of the App you need to add those properties in the
 ```
 
 **iOS Extension**
-In iOS you need to add those property extensions to the Info.plist. However, unlike the Android version, those properties only need to be added to the body. See the documentation for examples.
+In iOS you need to add those property extensions to the Info.plist. However, unlike the Android version, those properties only need to be added to the body. See the phongap documentation for examples.
 
 
