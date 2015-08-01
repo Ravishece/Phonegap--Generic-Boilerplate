@@ -39,7 +39,8 @@ Somehow I missed this in the first release.
 
 **Android Extension**
 To extend the base properties of the App you need to add those properties in the AndroidManifest.xml. In this case, because it is Phonegap, extend the property in the header and add those extended properties in the body of the XML. For more details, SEE: [Config File Elements](http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements)
-
+and this [Official Blog Post](http://phonegap.com/blog/2014/01/30/customizing-your-android-manifest-and-ios-property-list-on-phonegap-build/
+)
 
 *Added to header of XML*
 ```
@@ -55,5 +56,4 @@ To extend the base properties of the App you need to add those properties in the
 
 **iOS Extension**
 In iOS you need to add those property extensions to the Info.plist. However, unlike the Android version, those properties only need to be added to the body. See the phongap documentation for examples.
-
 
