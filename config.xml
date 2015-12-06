@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <!-- 2015-06-18 - ADDED xmlns:android so the Android properties can be extended -->
+    <!-- 2015-12-05 - REMOVED xmlns:android, add 'winphone' -->
     <widget xmlns = "http://www.w3.org/ns/widgets"
-        xmlns:android   = "http://schemas.android.com/apk/res/android"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.bsdmasterindex.phonegapgeneric-boilerplate"
-        version     = "1.1.2"
+        version     = "1.2.0"
         versionCode = "10" >
         <!-- versionCode is optional and Android only -->
-        <preference name="phonegap-version" value="3.5.0" />
+        <!-- <preference name="phonegap-version" value="3.5.0" /> -->
+        <preference name="phonegap-version" value="cli-5.2.0" />
 
         <name>Phonegap Generic Boilerplate</name>
         <description>Simple Generic Boilerplate</description>
@@ -16,22 +17,19 @@
         </author>
 
         <!-- Android SECTION -->
-        <gap:platform name="android" />
-        <gap:config-file platform="android" parent="/manifest/application" >
-            <!-- Add Android extensions here. SEE: http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements -->
-        </gap:config-file>
+        <platform name="android" />
 
         <!-- iOS SECTION -->
-        <gap:platform name="ios" />
-        <gap:config-file target="*-Info.plist" parent="CFBundleURLTypes">
-            <!-- Add iOS extensions here. SEE: http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements -->
-        </gap:config-file>
+        <platform name="ios" />
+
+        <!-- winphone SECTION -->
+        <platform name="winphone" />
 
         <!-- App requested permission -->
         <preference name="permissions" value="none"/>
 
         <!-- PLUGINS PLUGINS -->
         <!-- device required so we can detect if we are using iOS -->
-        <gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+        <plugin name="cordova-plugin-device"         source="npm" spec="1.0.1" />
 
     </widget>
