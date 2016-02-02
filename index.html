@@ -13,10 +13,8 @@
     #exitApp {margin:1em;float:right;}
     </style>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8" src="console-override.js"></script>
     <script type="text/javascript">
     function onButtonClick() {
-        console.log("button clicked.");
         alert("button clicked.");
     }
     //
@@ -24,12 +22,9 @@
     document.addEventListener("deviceready", onDeviceReady, false);
     //
     function onDeviceReady() {
-        myConsole = document.getElementById("dbug_console");
-        console.log("device ready.");
         alert("device ready.");
         if (device.platform === "iOS") {
             alert("got iOS.");
-            console.log("got iOS.");
             // hide Exit button. They don't have one on iOS devices.
             // http://www.mzcart.com/javascript-how-to-addremove-css-class-from-a-dom-element/
             document.getElementById('exitApp').classList.add("hidden");
@@ -55,10 +50,7 @@
 <pre id=info>pre</pre>
 <button onclick='onButtonClick()' class="button button-pill button-action button-large">button</button>
 
-<pre id=dbug_console>
-</pre>
-
-<div class="copyright" style="padding:5px;align:left;font-style:italic;font-size:small;">
+<div class="copyright">
     <span id=copyright>Created by Jesus Monroy, Jr. &copy; 2015</span>
 </div>
 </body>
