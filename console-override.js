@@ -12,10 +12,10 @@
 
 */
 // http://stackoverflow.com/questions/7042611/override-console-log-for-production
-var consolex = {};
+var console = {};
 var theArgs = "";
 // http://stackoverflow.com/questions/4116608/pass-unknown-number-of-arguments-into-javascript-function
-consolex.log = function() {
+console.log = function() {
 	theArgs = "";
 	for (var i = 0; i < arguments.length; i++) {
 		 theArgs = theArgs + JSON.stringify(arguments[i]) + ',' ;
