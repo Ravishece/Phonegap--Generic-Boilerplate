@@ -15,7 +15,6 @@
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="console-override.js"></script>
     <script type="text/javascript">
-  	myConsole = document.getElementById("dbug_console");
     function onButtonClick() {
         console.log("button clicked.");
         alert("button clicked.");
@@ -25,6 +24,7 @@
     document.addEventListener("deviceready", onDeviceReady, false);
     //
     function onDeviceReady() {
+        myConsole = document.getElementById("dbug_console");
         console.log("device ready.");
         alert("device ready.");
         if (device.platform === "iOS") {
